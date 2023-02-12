@@ -1,0 +1,326 @@
+* { 
+    margin:0;
+    padding: 0;
+    Box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    color:inherit;
+}
+
+/*-----   NAV BAR   -----*/
+
+#navBar, #navItemLink, .dropdown, button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+    text-decoration: none;
+}
+
+nav {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10%;
+    position: sticky;
+    top:0;
+    background-color: #F5F5F5;
+    box-shadow: 0 0 10px #333333;
+}
+
+.navLogo {
+    height: 8%;
+    width: 8%;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+#navBar {
+    background-color: #f5f5f5;
+    list-style: none;
+}
+
+#navItem{
+    display:inline-block;
+    padding: 2rem 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+#navBar, #navItemLink {
+    transition: all 0.3s ease 0s;
+}
+
+#navBar, #navItemLink:hover {
+    color: #cca14d; 
+}
+
+.dropdownMenuList {
+    padding: 1rem;
+    position: absolute;
+    list-style:none;
+    top: 4rem;
+    left: -1rem;
+    background-color: #F5F5F5;
+    display: flex;
+    Flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+}
+
+.dropdown:hover > .dropdownMenuList, .dropdown:focus > .dropdownMenuList { 
+    z-index: 1; 
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#dropdownItem {
+    padding:10px;
+}
+
+#ddlink {
+    text-decoration: none;
+}
+
+#ddlink:hover {
+    color:#cca14d;
+}
+
+#contactButton {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(49,98,110,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: whitesmoke;
+}
+
+#contactButton:hover {
+    background-color: rgba(49,98,110,0.8);
+    color:#cca14d;
+}
+
+/*-----   OPENING BLURB   -----*/
+.name {
+    color: #31626E;
+}
+.socialIcns {
+    padding: 5% 0;
+    list-style: none;
+    font-size: 30px;
+    color: #31626E;
+}
+
+#socLink {
+    transition: all 0.3s ease 0s;
+}
+#ico {
+    margin: 30px 0;
+}
+#socLink:hover {
+    color:#cca14d;
+}
+.instructions {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 50px 0 0 0;
+}
+
+.openerBlurb{
+    font-family: 'Montserrat', sans-serif;
+    padding: 5% 10%;
+    color:#3C403D;
+    width:70%;
+    display: flex;
+    transition: all 0.3s ease 0s;
+    margin: auto;
+}
+
+#obcplulink {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: black;
+}
+
+#obcplulink:hover {
+    color: darkgoldenrod;
+}
+
+#openerBlurbContent {
+    list-style: none;
+    margin: 0 30px;
+}
+
+#obct {
+    margin: 0 ;
+}
+
+#obch1 {
+    padding:0;
+    margin:0px;
+    font-weight: 600;
+    font-size:40px;
+}
+
+#obch3 {
+    color: rgba(60,64,61,0.5);
+    font-weight: 500;
+    margin: 10px 0 30px 0;
+    font-size: 20px;
+    
+}
+
+p {
+    font-size:18px;
+}
+
+#pfp {
+    height: 35%;
+    width: 35%;
+    margin: 0px 0px 0px 30px;
+}
+
+#bodyButton {
+    margin-right:30px;
+    padding: 9px 25px;
+    background-color: rgba(204,161,77,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #FFFFFF;
+}
+
+#bodyButton:hover {
+    background-color: rgba(204,161,77,0.8);
+    color:#0b354d;
+}
+
+@media only screen and (max-width: 768px) {
+    .openerBlurb{
+        font-family: 'Montserrat', sans-serif;
+        padding: 5% 10%;
+        color:#3C403D;
+        width:70%;
+        display: flex;
+        flex-direction: column-reverse;
+        transition: all 0.3s ease 0s;
+        margin: auto;
+    }
+    
+    #openerBlurbContent {
+        margin-top: 5rem;
+    }
+    #pfp {
+        height: 50%;
+        width: 50%;
+        margin: auto;
+    }
+    #socLink {
+        transition: all 0.3s ease 0s;
+    }
+    #ico {
+        margin: 30px 0;
+    }
+    #socLink:hover {
+        color:#cca14d;
+    }
+    .socialIcns {
+        list-style: none;
+        font-size: 30px;
+        color: #31626E;
+        display: block;
+    }       
+}
+
+/*-----   SECTION 2   -----*/
+
+.bgdivider1 {
+    background-image: url("Nursing_Hero_1.jpg");
+    justify-content: center;
+/*CHANGE THIS PHOTO BRO*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.section2 {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 200px;
+    color:#3C403D;
+    width:70%;
+    margin: auto;
+}
+
+.aboutMeHome {
+
+}
+
+#homeHeading1 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+}
+
+#s2ct {
+    
+}
+
+.OutcomesSec {
+    margin-top: 8rem;
+}
+
+.allOutcomes {
+    display: flex;
+    align-items: center;
+}
+.outcomeBar {
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+#outcome{
+    display:inline-block;
+    padding: 0px 30px;
+}
+
+#outcomeLink {
+    text-decoration: none;
+}
+
+/*************FOOTER**************/
+.foot {
+    margin-top: 5rem;
+    width:100%;
+    height: 8rem;
+    line-height: 8rem;
+    background-color: #cca14d;
+    display: block;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    color: #333333;
+    
+}
